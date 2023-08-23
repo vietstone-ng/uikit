@@ -8,13 +8,12 @@
 import UIKit
 
 class CustomTabBarVC: UIViewController {
+    @IBOutlet var tab0: CustomTab!
+    @IBOutlet var tab1: CustomTab!
+    @IBOutlet var tab2: CustomTab!
+    @IBOutlet var tab3: CustomTab!
     
-    @IBOutlet weak var tab0: CustomTab!
-    @IBOutlet weak var tab1: CustomTab!
-    @IBOutlet weak var tab2: CustomTab!
-    @IBOutlet weak var tab3: CustomTab!
-    
-    @IBOutlet weak var vcContainerView: UIView!
+    @IBOutlet var vcContainerView: UIView!
     
     private lazy var tabs = [tab0, tab1, tab2, tab3]
     
@@ -38,14 +37,14 @@ class CustomTabBarVC: UIViewController {
         }
     }
     
-    var selectedIndex: Int = 0 {
+    var selectedIndex: Int = -1 {
         didSet {
             guard selectedIndex != oldValue else { return }
             
-            tabs[oldValue]?.isSelected = false
+            tabs.forEach { $0?.isSelected = false }
             tabs[selectedIndex]?.isSelected = true
             
-            viewControllers[oldValue].view.isHidden = true
+            viewControllers.forEach { $0.view.isHidden = true }
             viewControllers[selectedIndex].view.isHidden = false
         }
     }
@@ -58,6 +57,7 @@ class CustomTabBarVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup()
     }
     
     func setViewControllers(_ viewControllers: [UIViewController]) {
@@ -65,11 +65,24 @@ class CustomTabBarVC: UIViewController {
         self.viewControllers = viewControllers
         selectedIndex = 0
     }
+    
+    private func setup() {
+        tabs.forEach {
+            let tap = UITapGestureRecognizer(target: self, action: #selector(tapOnTab(_:)))
+            $0?.addGestureRecognizer(tap)
+        }
+    }
+    
+    @objc func tapOnTab(_ sender: UITapGestureRecognizer) {
+        guard let view = sender.view as? CustomTab,
+              let index = tabs.firstIndex(of: view)
+        else { return }
+        selectedIndex = index
+    }
 }
 
 @IBDesignable
 class CustomTabBarBgView: UIView {
-    
     @IBInspectable
     var holeRadius: CGFloat = 40 {
         didSet {
@@ -106,7 +119,6 @@ class CustomTabBarBgView: UIView {
 
 @IBDesignable
 class CustomTab: UIView {
-    
     @IBInspectable
     var imageName: String = "house.fill" {
         didSet {
@@ -129,7 +141,8 @@ class CustomTab: UIView {
         // image
         let config = UIImage.SymbolConfiguration(pointSize: 22)
         if let image = UIImage(systemName: imageName, withConfiguration: config)?
-            .withTintColor(color, renderingMode: .alwaysOriginal) {
+            .withTintColor(color, renderingMode: .alwaysOriginal)
+        {
             let imageSize = image.size
             image.draw(at: CGPoint(x: CGRectGetMidX(rect) - imageSize.width / 2, y: 40 - imageSize.height / 2))
         }
