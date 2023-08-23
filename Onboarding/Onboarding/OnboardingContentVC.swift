@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnboaridingContentVC: UIViewController {
+class OnboardingContentVC: UIViewController {
     
     struct ViewModel {
         let imageName: String

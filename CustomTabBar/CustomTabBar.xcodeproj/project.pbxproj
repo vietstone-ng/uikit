@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B12609412A9467C40017F8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12609402A9467C40017F8CD /* AppDelegate.swift */; };
-		B12609432A9467C40017F8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12609422A9467C40017F8CD /* SceneDelegate.swift */; };
-		B126094A2A9467C60017F8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12609492A9467C60017F8CD /* Assets.xcassets */; };
-		B126094D2A9467C60017F8CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B126094B2A9467C60017F8CD /* LaunchScreen.storyboard */; };
-		B12609552A946A5C0017F8CD /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12609542A946A5C0017F8CD /* OnboardingVC.swift */; };
-		B126095A2A948E620017F8CD /* OnboardingContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12609582A948E620017F8CD /* OnboardingContentVC.swift */; };
-		B126095B2A948E620017F8CD /* OnboardingContentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B12609592A948E620017F8CD /* OnboardingContentVC.xib */; };
+		B18432E82A94BA7000D75A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18432E72A94BA7000D75A9C /* AppDelegate.swift */; };
+		B18432EA2A94BA7000D75A9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18432E92A94BA7000D75A9C /* SceneDelegate.swift */; };
+		B18432EC2A94BA7000D75A9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18432EB2A94BA7000D75A9C /* ViewController.swift */; };
+		B18432F12A94BA7100D75A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18432F02A94BA7100D75A9C /* Assets.xcassets */; };
+		B18432F42A94BA7100D75A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18432F22A94BA7100D75A9C /* LaunchScreen.storyboard */; };
+		B18433012A94BE7500D75A9C /* CustomTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18432FF2A94BE7500D75A9C /* CustomTabBarVC.swift */; };
+		B18433022A94BE7500D75A9C /* CustomTabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18433002A94BE7500D75A9C /* CustomTabBarVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B126093D2A9467C40017F8CD /* Onboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B12609402A9467C40017F8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B12609422A9467C40017F8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B12609492A9467C60017F8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B126094C2A9467C60017F8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B126094E2A9467C60017F8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B12609542A946A5C0017F8CD /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
-		B12609582A948E620017F8CD /* OnboardingContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentVC.swift; sourceTree = "<group>"; };
-		B12609592A948E620017F8CD /* OnboardingContentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingContentVC.xib; sourceTree = "<group>"; };
+		B18432E42A94BA7000D75A9C /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18432E72A94BA7000D75A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B18432E92A94BA7000D75A9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B18432EB2A94BA7000D75A9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B18432F02A94BA7100D75A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B18432F32A94BA7100D75A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B18432F52A94BA7100D75A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18432FF2A94BE7500D75A9C /* CustomTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVC.swift; sourceTree = "<group>"; };
+		B18433002A94BE7500D75A9C /* CustomTabBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B126093A2A9467C40017F8CD /* Frameworks */ = {
+		B18432E12A94BA7000D75A9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B12609342A9467C40017F8CD = {
+		B18432DB2A94BA7000D75A9C = {
 			isa = PBXGroup;
 			children = (
-				B126093F2A9467C40017F8CD /* Onboarding */,
-				B126093E2A9467C40017F8CD /* Products */,
+				B18432E62A94BA7000D75A9C /* CustomTabBar */,
+				B18432E52A94BA7000D75A9C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B126093E2A9467C40017F8CD /* Products */ = {
+		B18432E52A94BA7000D75A9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B126093D2A9467C40017F8CD /* Onboarding.app */,
+				B18432E42A94BA7000D75A9C /* CustomTabBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B126093F2A9467C40017F8CD /* Onboarding */ = {
+		B18432E62A94BA7000D75A9C /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				B12609402A9467C40017F8CD /* AppDelegate.swift */,
-				B12609422A9467C40017F8CD /* SceneDelegate.swift */,
-				B12609492A9467C60017F8CD /* Assets.xcassets */,
-				B126094B2A9467C60017F8CD /* LaunchScreen.storyboard */,
-				B126094E2A9467C60017F8CD /* Info.plist */,
-				B12609542A946A5C0017F8CD /* OnboardingVC.swift */,
-				B12609582A948E620017F8CD /* OnboardingContentVC.swift */,
-				B12609592A948E620017F8CD /* OnboardingContentVC.xib */,
+				B18432E72A94BA7000D75A9C /* AppDelegate.swift */,
+				B18432E92A94BA7000D75A9C /* SceneDelegate.swift */,
+				B18432EB2A94BA7000D75A9C /* ViewController.swift */,
+				B18432F02A94BA7100D75A9C /* Assets.xcassets */,
+				B18432F22A94BA7100D75A9C /* LaunchScreen.storyboard */,
+				B18432F52A94BA7100D75A9C /* Info.plist */,
+				B18432FF2A94BE7500D75A9C /* CustomTabBarVC.swift */,
+				B18433002A94BE7500D75A9C /* CustomTabBarVC.xib */,
 			);
-			path = Onboarding;
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B126093C2A9467C40017F8CD /* Onboarding */ = {
+		B18432E32A94BA7000D75A9C /* CustomTabBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B12609512A9467C60017F8CD /* Build configuration list for PBXNativeTarget "Onboarding" */;
+			buildConfigurationList = B18432F82A94BA7100D75A9C /* Build configuration list for PBXNativeTarget "CustomTabBar" */;
 			buildPhases = (
-				B12609392A9467C40017F8CD /* Sources */,
-				B126093A2A9467C40017F8CD /* Frameworks */,
-				B126093B2A9467C40017F8CD /* Resources */,
+				B18432E02A94BA7000D75A9C /* Sources */,
+				B18432E12A94BA7000D75A9C /* Frameworks */,
+				B18432E22A94BA7000D75A9C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Onboarding;
-			productName = Onboarding;
-			productReference = B126093D2A9467C40017F8CD /* Onboarding.app */;
+			name = CustomTabBar;
+			productName = CustomTabBar;
+			productReference = B18432E42A94BA7000D75A9C /* CustomTabBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B12609352A9467C40017F8CD /* Project object */ = {
+		B18432DC2A94BA7000D75A9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					B126093C2A9467C40017F8CD = {
+					B18432E32A94BA7000D75A9C = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = B12609382A9467C40017F8CD /* Build configuration list for PBXProject "Onboarding" */;
+			buildConfigurationList = B18432DF2A94BA7000D75A9C /* Build configuration list for PBXProject "CustomTabBar" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,48 +113,48 @@
 				en,
 				Base,
 			);
-			mainGroup = B12609342A9467C40017F8CD;
-			productRefGroup = B126093E2A9467C40017F8CD /* Products */;
+			mainGroup = B18432DB2A94BA7000D75A9C;
+			productRefGroup = B18432E52A94BA7000D75A9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B126093C2A9467C40017F8CD /* Onboarding */,
+				B18432E32A94BA7000D75A9C /* CustomTabBar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B126093B2A9467C40017F8CD /* Resources */ = {
+		B18432E22A94BA7000D75A9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B126094D2A9467C60017F8CD /* LaunchScreen.storyboard in Resources */,
-				B126094A2A9467C60017F8CD /* Assets.xcassets in Resources */,
-				B126095B2A948E620017F8CD /* OnboardingContentVC.xib in Resources */,
+				B18432F42A94BA7100D75A9C /* LaunchScreen.storyboard in Resources */,
+				B18432F12A94BA7100D75A9C /* Assets.xcassets in Resources */,
+				B18433022A94BE7500D75A9C /* CustomTabBarVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B12609392A9467C40017F8CD /* Sources */ = {
+		B18432E02A94BA7000D75A9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B12609552A946A5C0017F8CD /* OnboardingVC.swift in Sources */,
-				B126095A2A948E620017F8CD /* OnboardingContentVC.swift in Sources */,
-				B12609412A9467C40017F8CD /* AppDelegate.swift in Sources */,
-				B12609432A9467C40017F8CD /* SceneDelegate.swift in Sources */,
+				B18432EC2A94BA7000D75A9C /* ViewController.swift in Sources */,
+				B18432E82A94BA7000D75A9C /* AppDelegate.swift in Sources */,
+				B18432EA2A94BA7000D75A9C /* SceneDelegate.swift in Sources */,
+				B18433012A94BE7500D75A9C /* CustomTabBarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B126094B2A9467C60017F8CD /* LaunchScreen.storyboard */ = {
+		B18432F22A94BA7100D75A9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B126094C2A9467C60017F8CD /* Base */,
+				B18432F32A94BA7100D75A9C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B126094F2A9467C60017F8CD /* Debug */ = {
+		B18432F62A94BA7100D75A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		B12609502A9467C60017F8CD /* Release */ = {
+		B18432F72A94BA7100D75A9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,7 +276,7 @@
 			};
 			name = Release;
 		};
-		B12609522A9467C60017F8CD /* Debug */ = {
+		B18432F92A94BA7100D75A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -285,7 +285,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D326JWPLAC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Onboarding/Info.plist;
+				INFOPLIST_FILE = CustomTabBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -295,7 +295,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.vietstone.Onboarding;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.vietstone.CustomTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -303,7 +303,7 @@
 			};
 			name = Debug;
 		};
-		B12609532A9467C60017F8CD /* Release */ = {
+		B18432FA2A94BA7100D75A9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -312,7 +312,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D326JWPLAC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Onboarding/Info.plist;
+				INFOPLIST_FILE = CustomTabBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -322,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.vietstone.Onboarding;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.vietstone.CustomTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -333,25 +333,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B12609382A9467C40017F8CD /* Build configuration list for PBXProject "Onboarding" */ = {
+		B18432DF2A94BA7000D75A9C /* Build configuration list for PBXProject "CustomTabBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B126094F2A9467C60017F8CD /* Debug */,
-				B12609502A9467C60017F8CD /* Release */,
+				B18432F62A94BA7100D75A9C /* Debug */,
+				B18432F72A94BA7100D75A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B12609512A9467C60017F8CD /* Build configuration list for PBXNativeTarget "Onboarding" */ = {
+		B18432F82A94BA7100D75A9C /* Build configuration list for PBXNativeTarget "CustomTabBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B12609522A9467C60017F8CD /* Debug */,
-				B12609532A9467C60017F8CD /* Release */,
+				B18432F92A94BA7100D75A9C /* Debug */,
+				B18432FA2A94BA7100D75A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B12609352A9467C40017F8CD /* Project object */;
+	rootObject = B18432DC2A94BA7000D75A9C /* Project object */;
 }

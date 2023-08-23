@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTabBarVC" customModule="CustomTabBar" customModuleProvider="target">
+            <connections>
+                <outlet property="tab0" destination="JOK-x3-gXP" id="wL2-Ng-wDy"/>
+                <outlet property="tab1" destination="wrr-1y-aU3" id="UMK-dm-rxI"/>
+                <outlet property="tab2" destination="yqR-PI-wP6" id="zyd-ja-S0e"/>
+                <outlet property="tab3" destination="PiR-wb-kzG" id="SbO-SZ-GVD"/>
+                <outlet property="vcContainerView" destination="L3k-9l-rd9" id="Kac-Fw-uin"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3k-9l-rd9">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="764"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZG-Qx-raM" customClass="CustomTabBarBgView" customModule="CustomTabBar" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="748" width="393" height="104"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="i7p-q2-zyX">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="104"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VQ-wY-QSM">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="eqz-Yx-Lux"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arG-Ws-A7N">
+                                    <rect key="frame" x="0.0" y="70" width="393" height="34"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="i7p-q2-zyX" firstAttribute="top" secondItem="kZG-Qx-raM" secondAttribute="top" id="4RM-Qb-YcZ"/>
+                        <constraint firstAttribute="trailing" secondItem="i7p-q2-zyX" secondAttribute="trailing" id="8gN-tM-YaM"/>
+                        <constraint firstAttribute="bottom" secondItem="i7p-q2-zyX" secondAttribute="bottom" id="c73-Bg-7Qc"/>
+                        <constraint firstItem="i7p-q2-zyX" firstAttribute="leading" secondItem="kZG-Qx-raM" secondAttribute="leading" id="fd5-ai-qdz"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIi-8J-dpi">
+                    <rect key="frame" x="161.66666666666666" y="713" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="yfE-HC-hf1"/>
+                        <constraint firstAttribute="height" constant="70" id="yq1-oY-1Sg"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="tabbar_add"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6CS-lo-yBc">
+                    <rect key="frame" x="25.000000000000007" y="748" width="121.66666666666669" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOK-x3-gXP" customClass="CustomTab" customModule="CustomTabBar" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="house.fill"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSelected" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrr-1y-aU3" customClass="CustomTab" customModule="CustomTabBar" customModuleProvider="target">
+                            <rect key="frame" x="65.666666666666671" y="0.0" width="56" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="chart.xyaxis.line"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="NAZ-gL-hZr"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Aqf-jG-qyi">
+                    <rect key="frame" x="246.66666666666666" y="748" width="121.33333333333334" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqR-PI-wP6" customClass="CustomTab" customModule="CustomTabBar" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="clock.fill"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiR-wb-kzG" customClass="CustomTab" customModule="CustomTabBar" customModuleProvider="target">
+                            <rect key="frame" x="65.666666666666657" y="0.0" width="55.666666666666657" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="person.crop.circle.fill"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="K3F-lo-RIQ"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kZG-Qx-raM" firstAttribute="top" secondItem="RIi-8J-dpi" secondAttribute="centerY" id="04E-GQ-7vZ"/>
+                <constraint firstItem="Aqf-jG-qyi" firstAttribute="leading" secondItem="RIi-8J-dpi" secondAttribute="trailing" constant="15" id="0ZQ-hp-yvM"/>
+                <constraint firstItem="6CS-lo-yBc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="36a-GP-M6w"/>
+                <constraint firstItem="kZG-Qx-raM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6ES-gp-9dh"/>
+                <constraint firstItem="L3k-9l-rd9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7RN-GJ-ykd"/>
+                <constraint firstItem="Aqf-jG-qyi" firstAttribute="top" secondItem="kZG-Qx-raM" secondAttribute="top" id="AeK-LR-goJ"/>
+                <constraint firstItem="RIi-8J-dpi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C9m-gR-1Ar"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Aqf-jG-qyi" secondAttribute="trailing" constant="25" id="FIO-ho-NEl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kZG-Qx-raM" secondAttribute="trailing" id="QmZ-kl-wao"/>
+                <constraint firstItem="L3k-9l-rd9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Tbt-om-DhG"/>
+                <constraint firstItem="RIi-8J-dpi" firstAttribute="leading" secondItem="6CS-lo-yBc" secondAttribute="trailing" constant="15" id="UpG-50-GdT"/>
+                <constraint firstItem="L3k-9l-rd9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="f2b-Mf-Rm1"/>
+                <constraint firstItem="6CS-lo-yBc" firstAttribute="top" secondItem="kZG-Qx-raM" secondAttribute="top" id="kqQ-Ya-Idm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="arG-Ws-A7N" secondAttribute="top" id="l16-yt-2Wy"/>
+                <constraint firstAttribute="bottom" secondItem="kZG-Qx-raM" secondAttribute="bottom" id="lDf-fh-vK2"/>
+                <constraint firstItem="kZG-Qx-raM" firstAttribute="top" secondItem="L3k-9l-rd9" secondAttribute="bottom" constant="-16" id="yAo-7H-LA9"/>
+            </constraints>
+            <point key="canvasLocation" x="84.732824427480907" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_add" width="50.520000457763672" height="50.720001220703125"/>
+    </resources>
+</document>
